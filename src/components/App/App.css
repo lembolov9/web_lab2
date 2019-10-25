@@ -1,0 +1,21 @@
+.App {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: lavender;
+    font-family: 'Georgia', serif ;
+    border-radius: 15px;
+}
+
+.header {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.geoBtn {
+    border-radius: 10px;
+    margin-top: 20px ;
+    background-color: thistle;
+}
+
+

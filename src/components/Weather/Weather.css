@@ -1,0 +1,92 @@
+.Weather {
+    margin: 20px;
+    background-color: thistle;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid > .grid {
+    grid-template-rows: 0.3fr 1fr ;
+}
+
+.grid > div {
+    margin: 0 20px;
+}
+
+.grid > .cityTemp {
+    font-size: 3.5em;
+}
+
+.grid > .Info {
+    justify-content: space-between;
+}
+
+.cityName {
+    font-family: Ubuntu, sans-serif;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.cityIcon {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.cityTemp {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+
+.Info {
+    flex-direction: column;
+}
+
+
+.propsRow {
+    justify-content: space-between;
+}
+
+.mainInfo > div {
+    font-weight: bold;
+    margin: auto 0;
+}
+
+.deleteBtn {
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+.loader {
+    margin: auto;
+    width: 6em;
+    height: 6em;
+    border: 1.1em solid rgba(0, 0, 0, 0.2);
+    border-left: 1.1em solid lavender;
+    border-radius: 50%;
+    animation: load8 1.1s infinite linear;
+    transition: opacity 0.3s;
+}
+
+@keyframes load8 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
