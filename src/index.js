@@ -1,13 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import React from 'react';
 import {render} from 'react-dom';
-import App from "./components/App/App.js"
 import {Provider} from "react-redux";
 import {applyMiddleware, createStore} from "redux";
 import {INITIAL_STATE} from "./constants/initial-state";
 import thunk from "redux-thunk";
 import rootReducer from "./reducers/index"
 import * as serviceWorker from './serviceWorker';
+import {AppC} from "./components/App/App";
 
 const newCityId = localStorage['weather-app'] ? JSON.parse(localStorage['weather-app'])['newCityId']: 1;
 const cities = localStorage['weather-app'] ? JSON.parse(localStorage['weather-app'])['cityList']: [];
@@ -25,7 +25,7 @@ const store  = createStore(rootReducer, state, applyMiddleware(thunk));
 
 render(
         <Provider store={store}>
-            <App/>
+            <AppC/>
         </Provider>,
     document.getElementById("root")
 );

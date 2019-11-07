@@ -44,4 +44,4 @@ const mapDispatchToProps = dispatch => ({
 const Add = connect(mapStateToProps, mapDispatchToProps)(AddForm);
 
 
-export default Add;
+export {Add, AddForm};

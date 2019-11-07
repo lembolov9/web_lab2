@@ -4,10 +4,10 @@ import axios from "axios";
 import {DEFAULT} from "../../constants/initial-state";
 import { connect } from 'react-redux';
 import {getMainCity} from "../../reducers"
-import WList from "../WeatherList/WeatherList";
 import {getWeatherError, getWeatherSuccess, getWeatherWait} from "../../actions";
-import Add from "../AddForm/AddForm";
 import "./App.css"
+import {WList} from "../WeatherList/WeatherList";
+import {Add} from "../AddForm/AddForm";
 
 const getWeather = (dispatch, coords, id) => {
     axios
@@ -18,7 +18,7 @@ const getWeather = (dispatch, coords, id) => {
         .catch(error => {
             dispatch(getWeatherError(error, id));
         });
-}
+};
 
 
 export const getWeatherByCoordsAction = () => {
@@ -69,5 +69,6 @@ const mapDispatchToProps = (dispatch) => ({
     getWeatherByCoords: () => dispatch(getWeatherByCoordsAction())
 });
 
+const AppC = connect(mapStateToProps, mapDispatchToProps)(App);
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export {AppC, App};

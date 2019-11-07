@@ -36,7 +36,6 @@ const mapDispatchToProps = (dispatch) => ({
 class WeatherList extends React.Component {
 
     render() {
-        console.log(this.props);
         return (
             <div className="WeatherList">
                 {this.props.cities.map(city => (
@@ -49,4 +48,5 @@ class WeatherList extends React.Component {
 
 const WList = connect(mapStateToProps, mapDispatchToProps)(WeatherList);
 
-export default WList;
+
+export {WList , WeatherList};
