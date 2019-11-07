@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherList display different weathers 1`] = `
+<div
+  className="WeatherList"
+>
+  <div
+    className="Weather"
+  >
+    <div
+      className="loader"
+    />
+  </div>
+  <div
+    className="Weather error"
+  >
+    <div>
+      Shit happens
+    </div>
+    <button
+      className="circle"
+      onClick={[Function]}
+    >
+      x
+    </button>
+  </div>
+  <div
+    className="Weather"
+  >
+    <div
+      className="loader"
+    />
+  </div>
+</div>
+`;

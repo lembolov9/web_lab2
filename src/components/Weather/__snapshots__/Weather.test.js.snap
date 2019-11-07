@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main city weather Error 1`] = `
+<div
+  className="Weather error"
+>
+  <div>
+    Shit happens
+  </div>
+</div>
+`;
+
+exports[`Main city weather Not ready weather data 1`] = `
+<div
+  className="Weather"
+>
+  <div
+    className="loader"
+  />
+</div>
+`;
+
+exports[`Main city weather Ready weather data 1`] = `
+<div
+  className="Weather grid"
+>
+  <div
+    className="mainInfo grid"
+  >
+    <div
+      className="cityName"
+    >
+      <h3>
+        Kiev
+      </h3>
+    </div>
+    <div
+      className="cityTemp"
+    >
+      8.02
+       ℃
+    </div>
+    <div
+      className="cityIcon"
+    >
+      <img
+        alt="weather icon"
+        src="https://openweathermap.org/themes/openweathermap/assets/vendor/owm/img/widgets/10n.png"
+      />
+    </div>
+  </div>
+  <div
+    className="Info flex"
+  >
+    <div>
+      Wind speed:
+    </div>
+    <div>
+      3
+       m/s
+    </div>
+  </div>
+  <div
+    className="propsRow flex"
+  >
+    <div>
+      Clouds:
+    </div>
+    <div>
+      90
+      %
+    </div>
+  </div>
+  <div
+    className="propsRow flex"
+  >
+    <div>
+      Pressure:
+    </div>
+    <div>
+      1011
+      hpa
+    </div>
+  </div>
+  <div
+    className="propsRow flex"
+  >
+    <div>
+      Humidity:
+    </div>
+    <div>
+      100
+      %
+    </div>
+  </div>
+  <div
+    className="propsRow flex"
+  >
+    <div>
+      Coordinates:
+    </div>
+    <div>
+      [
+      30.52
+      , 
+      50.43
+      ]
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Not main city weather Error 1`] = `
+<div
+  className="Weather error"
+>
+  <div>
+    Shit happens
+  </div>
+  <button
+    className="circle"
+  >
+    x
+  </button>
+</div>
+`;
+
+exports[`Not main city weather Not ready weather data 1`] = `
+<div
+  className="Weather"
+>
+  <div
+    className="loader"
+  />
+</div>
+`;
+
+exports[`Not main city weather Ready weather data 1`] = `
+<div
+  className="Weather"
+>
+  <div
+    className="mainInfo propsRow flex"
+  >
+    <div
+      className="cityName"
+    >
+      Kiev
+    </div>
+    <div
+      className="cityTemp"
+    >
+      8.02
+       ℃
+    </div>
+    <div
+      className="cityIcon"
+    >
+      <img
+        alt="weather icon"
+        src="https://openweathermap.org/img/wn/10n.png"
+      />
+    </div>
+    <div>
+      <button
+        className="deleteBtn"
+      >
+        +
+      </button>
+    </div>
+  </div>
+  <div
+    className="Info flex"
+  >
+    <div>
+      Wind speed:
+    </div>
+    <div>
+      3
+       m/s
+    </div>
+  </div>
+  <div
+    className="propsRow flex"
+  >
+    <div>
+      Clouds:
+    </div>
+    <div>
+      90
+      %
+    </div>
+  </div>
+  <div
+    className="propsRow flex"
+  >
+    <div>
+      Pressure:
+    </div>
+    <div>
+      1011
+      hpa
+    </div>
+  </div>
+  <div
+    className="propsRow flex"
+  >
+    <div>
+      Humidity:
+    </div>
+    <div>
+      100
+      %
+    </div>
+  </div>
+  <div
+    className="propsRow flex"
+  >
+    <div>
+      Coordinates:
+    </div>
+    <div>
+      [
+      30.52
+      , 
+      50.43
+      ]
+    </div>
+  </div>
+</div>
+`;

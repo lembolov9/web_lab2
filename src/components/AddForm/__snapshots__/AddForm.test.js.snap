@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddForm render ok 1`] = `
+<div
+  className="AddForm"
+>
+  <div>
+    <h2>
+      Favourites
+    </h2>
+  </div>
+  <div>
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        id="addCity"
+        placeholder="Add city"
+        required={true}
+      />
+      <button
+        className="addBtn"
+        type="submit"
+      >
+        +
+      </button>
+    </form>
+  </div>
+</div>
+`;
